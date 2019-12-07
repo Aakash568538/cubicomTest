@@ -20,9 +20,9 @@ function login(username, password) {
                     dispatch(success(user));
                     history.push('/admin/dashboard');
                 },
-                error => {
-                    history.push('/admin/dashboard');
+                error => {                    
                     dispatch(failure(error.toString()));
+                    history.push('/admin/dashboard');
                 }
             );
     };
