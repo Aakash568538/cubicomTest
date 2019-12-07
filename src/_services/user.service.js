@@ -40,14 +40,14 @@ function getAll() {
         headers: authHeader()
     };
 
-    return fetch(`${config.apiUrl}/users`, requestOptions).then(handleResponse);
+    return fetch(`${config.apiUrl}/login`, requestOptions).then(handleResponse);
 }
 
 function handleResponse(response) {
     return response.text().then(text => {
         const data = text && JSON.parse(text);
         if (!response.ok) {
-            if (response.status === 401) {
+            if (response.status !== 200) {
                 // auto logout if 401 response returned from api
                 logout();
                 // location.reload(true);
