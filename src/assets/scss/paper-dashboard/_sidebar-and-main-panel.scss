@@ -155,7 +155,8 @@
         position: relative;
         padding: 7px $padding-base-horizontal;
         z-index: 4;
-
+        background: transparent linear-gradient(270deg, #003A8A 0%, #00A29D 100%) 0% 0% no-repeat padding-box;
+        
         a.logo-mini,
         a.logo-normal{
             @extend .animation-transition-general;
