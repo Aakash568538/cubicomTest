@@ -4758,3 +4758,40 @@ License - nucleoapp.com/license/
 
 *, *:focus, a, a:focus {
   outline: none; }
+
+
+  .login-container{
+    margin-top: 5%;
+    margin-bottom: 5%;    
+    background: #2C2C2C33;
+}
+.login-form-1{
+    padding: 5%;
+    background-image: url("/damir-bosnjak.jpg");
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-1 h3{
+    text-align: center;
+    color: #333;
+}
+
+.heading{
+  
+}
+
+.login-form-2{
+    padding: 5%;
+    background: #2C2C2C33;
+    border-top-right-radius:15px;
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    border-bottom-left-radius:15px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-2 h3{
+    text-align: center;
+    color: #fff;
+}
+.login-container form{
+    padding: 10%;
+}
