@@ -21,6 +21,11 @@ function login(username, password) {
             localStorage.setItem('user', JSON.stringify(user));
 
             return user;
+        },
+        error => {
+            localStorage.setItem('user', JSON.stringify({}));
+
+            return {};
         });
 }
 

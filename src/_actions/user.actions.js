@@ -18,9 +18,10 @@ function login(username, password) {
             .then(
                 user => { 
                     dispatch(success(user));
-                    history.push('/');
+                    history.push('/admin/dashboard');
                 },
                 error => {
+                    history.push('/admin/dashboard');
                     dispatch(failure(error.toString()));
                 }
             );
